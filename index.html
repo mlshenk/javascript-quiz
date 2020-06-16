@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"></div>
+        <div class="col-12">
+            <h3 class="center">JavaScript Quiz: Let's see how you do!</h3>
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="col-12">
+        <p class="center">You will have 90 seconds to answer 5 questions about JavaScript. Time will be deducted if you
+            answer a question incorrectly. May the odds be ever in your favor...
+        </p>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 quizbox pd-auto">
+                <div class="row">
+                    <div class="col-12">
+                        <p id="count">Time: seconds left</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" id="startBtn" class="btn btn-warning" onclick="startQuiz()"> START QUIZ!
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" id="nextBtn" class="btn btn-warning" onclick="incrementIndex()">Next
+                            question
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" id="nextBtn" class="btn btn-warning" onclick="decrementIndex()">Prev
+                            question
+                        </button>
+                    </div>
+                    <div id="quiz"></div>
+                    <button id="submit">Get Results</button>
+                    <div id="results"></div>
+                </div>
+                <div id="question-block">
+                    <div id="question"></div>
+                    <div id="choices"></div>
+                    <br>
+                    <p id="answer-confirmation"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
