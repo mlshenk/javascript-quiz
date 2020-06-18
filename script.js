@@ -1,28 +1,32 @@
+
+
+
+
 var questions = [{
 	id: "1",
-    question: "1. How do you write a message in an alert box?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
-    correctChoice: "msgBox('Hello World');"
+    question: `1. Which of the following is the correct syntax to display "Hey there!" in an alert box?`,
+    choices: [`A. alertbox(“Hey there!”)`, `B. msg(“Hey there!”)`, `C. msgbox(“Hey there!”)`, `D. alert(“Hey there!”);`],
+    correctChoice: `D. alert(“Hey there!”);`
 }, {
 	id: "2",
-    question: "2. How do you empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
-    correctChoice: "arrayList(0)"
+    question: `Which method of an Array object adds and/or removes elements from an array.`,
+    choices: [`A.  Shift`,`B.  Splice`, `C.  Slice`, `D.  Reverse`],
+    correctChoice: "B.  Splice"
 }, {
 	id: "3",
-	question: "3. What function adds an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-    correctChoice: "push,unshift"
+	question: "3. It is not possible to nest functions in JavaScript?",
+    choices: [`A  True`, `B.  False`],
+    correctChoice: "B.  False"
 }, {
 	id: "4",
-    question: "4. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctChoice: "number"
+    question: `4. What does the "this" jeyword in JavaScript do?`,
+    choices: [`A.  It refers to the current object`, `B.  It refers to the previous object`,`C.  It it is a gloal selector`,`D.  None of the above`],
+    correctChoice: "A.  It refers to the current object"
 },{
 	id: "5",
-	question: "5. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
-    correctChoice: "All div elements"
+	question: `5. What are variables used for in JavaScript`,
+    choices: [`A.  Storing numbers, dates, or other values`,`B.  Unlocking varying abilities`,`C.  Causing high-school algebra flashbacks`,`D.  None of the above`],
+    correctChoice: "A.  Storing numbers, dates, or other values"
 }
 ]
 
