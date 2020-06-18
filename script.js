@@ -111,7 +111,7 @@ function clearFeedback(){
 }
 function endQuiz(){
 
-    renderQuizComplete();
+
     var playerInitials = document.getElementById("displayInitials").value.trim();
     if (playerInitials !== ""){
         var highScoreList = JSON.parse(window.localStorage.getItem("highScoreList")) || [];
@@ -128,9 +128,7 @@ function endQuiz(){
 
 
 function getResults(){
-
     document.getElementById("finalscore").textContent=totalScore;
-
 }
 
 function addElement(question) { 

@@ -1,45 +1,99 @@
 body {
     background-color: #041E42;
     color: #EFB21E;
+    align-items: center;
 }
 .container-fluid {
-    background-color: grey;
+    background-color: silver;
     margin: 5% auto;
     padding: 20px;
     color: black;
     border: 6px solid #EFB21E;
     border-style: double;
-    width: 50%;
+    width: 80%;
     text-align: center;
+    
+}
+.btn-startBtn {
+    color: #041E42;
+    background-color: #EFB21E;
+    border: 5px solid #041E42;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn-startBtn:hover {
     background-color: #EFB21E;;
     border: 3px solid #041E42;;
     opacity: 1;
 }
-.btn-startBtn {
-    color: #041E42;;
-    background-color: #EFB21E;
-    border: 2px solid #041E42;
-    font-size: 30px;
-    font-weight: bold;
-}
+
 #btn-resultsBtn {
+    align-items: center
+    ;
     color: #EFB21E;
     background-color: #041E42;
     border: 2px solid #EFB21E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-resultsBtn:after {
+    background-color: #EFB21E;;
+    border: 3px solid #041E42;;
+    opacity: 1;
 }
 .btn-score {
     color: #EFB21E;
     background-color: #041E42;
     border: 2px solid #EFB21E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn-score:hover {
-    background-color:#041E42; 
-    border: 3px solid #EFB21E;
-    color: #EFB21E;
+    background-color: #EFB21E;;
+    border: 3px solid #041E42;;
     opacity: 1;
+}
+p {
+    text-align: center;
+}
+h1 {
+    color: #EFB21E;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    color:  #041E42;
+    background-color:  #EFB21E;
+    border: 1px solid#041E42;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+#answer-confirmation {
+    font-size: 25px;
+    font-weight: bolder;
 }
 .hide {
 display: none;
 } 
+.container {
+    background-color: grey;
+    margin: 5% auto;
+    padding: 20px;
+    color: black;
+    border: 6px solid #EFB21E;
+    width: 80%;
+    text-align: center;
+}
+#clearButton {
+    color: #EFB21E;
+    background-color: #041E42;
+    border: 1px solid #EFB21E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    color:blue
+}
+ol {
+    color: white;
+    font-size: 20px;
+}
