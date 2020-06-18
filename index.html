@@ -35,21 +35,22 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button type="button" id="startBtn" class="btn btn-warning" onclick="startQuiz()"> START QUIZ!
+                        <button type="button" id="startBtn" class="btn btn-startBtn" onclick="startQuiz()"> START QUIZ!
                         </button>
                     </div>
                 </div>
                     <div id="nextQuestion"></div>
                     <div id="prevQuestion"></div>
                     <div id="quiz"></div>
-                    <button id="resultsBtn" onclick="getResults()">Get Results</button>
+                    <br>
+                    <button id="btn-resultsBtn" onclick="getResults()">Get Results</button>
                     <div id="results">
                         <br>
                         <br>
                         <div id="quizCompleted"> </h3>
                             <p>Click "Get Results" to see your score. Your total score is <span id="finalscore"></span>.</p>
-                            <p>Enter your initials below: <input type="text" id="displayInitials" max="4"/></p>
-                            <button id="scoreButton" onclick="endQuiz()">Submit score</button>
+                            <p>Enter your initials below: <input type="text" placeholder="e.g. MLS" id="displayInitials" max="4"/></p>
+                            <button id="scoreButton" class="btn btn-score" onclick="endQuiz()">Submit score</button>
                     </div>
                 </div>
                 <div id="question-block">
