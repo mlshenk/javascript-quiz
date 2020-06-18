@@ -140,14 +140,14 @@ function renderButtons() {
     var nextBtnElement = document.getElementById("nextQuestion");
     var nextBtn = document.createElement("button");
         nextBtn.setAttribute("value", "next");
-        nextBtn.textContent = "next";
+        nextBtn.textContent = "Next Question";
         nextBtn.onclick = incrementIndex;
         nextBtnElement.appendChild(nextBtn);
 
     var prevBtnElement = document.getElementById("prevQuestion");
     var prevBtn = document.createElement("button");
         prevBtn.setAttribute("value", "prev");
-        prevBtn.textContent = "prev";
+        prevBtn.textContent = "Previous Question";
         prevBtn.onclick = decrementIndex;
         prevBtnElement.appendChild(prevBtn);
     }
