@@ -1,7 +1,3 @@
-
-
-
-
 var questions = [{
 	id: "1",
     question: `1. Which of the following is the correct syntax to display "Hey there!" in an alert box?`,

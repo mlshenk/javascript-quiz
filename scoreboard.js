@@ -10,6 +10,7 @@ function showFinalScore(){
       olEl.appendChild(liTag);
     });
 }
+
 showFinalScore();
 
 function clearHighScores() {
