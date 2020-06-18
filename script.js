@@ -15,13 +15,13 @@ var questions = [{
     correctChoice: "B.  False"
 }, {
 	id: "4",
-    question: `4. What does the "this" jeyword in JavaScript do?`,
+    question: `4. What does the "this" keyword in JavaScript do?`,
     choices: [`A.  It refers to the current object`, `B.  It refers to the previous object`,`C.  It it is a gloal selector`,`D.  None of the above`],
     correctChoice: "A.  It refers to the current object"
 },{
 	id: "5",
 	question: `5. What are variables used for in JavaScript`,
-    choices: [`A.  Storing numbers, dates, or other values`,`B.  Unlocking varying abilities`,`C.  Causing high-school algebra flashbacks`,`D.  None of the above`],
+    choices: [`A.  Storing numbers, dates, or other values`,`B.  Unlocking varying abilities`,`C.  Solving algebra problems from high school`,`D.  None of the above`],
     correctChoice: "A.  Storing numbers, dates, or other values"
 }
 ]
