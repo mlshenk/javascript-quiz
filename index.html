@@ -30,7 +30,7 @@
             <div class="col-8 quizbox pd-auto">
                 <div class="row">
                     <div class="col-12">
-                        <p id="count">Time: seconds left</p>
+                        <p id="count">Remaining time will apear here</p>
                     </div>
                 </div>
                 <div class="row">
@@ -39,26 +39,15 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div class="frow">
-                    <div class="col-6">
-                        <!-- <button type="button" id="nextBtn" class="btn btn-warning" onclick="incrementIndex()">Next -->
-                            <!-- question -->
-                        <!-- </button>
-                    </div> -->
                     <div id="nextQuestion"></div>
-                    <!-- <div class="col-6">
-                        <button type="button" id="nextBtn" class="btn btn-warning" onclick="decrementIndex()">Prev
-                            question
-                        </button>
-                    </div> -->
                     <div id="prevQuestion"></div>
                     <div id="quiz"></div>
                     <button id="resultsBtn" onclick="getResults()">Get Results</button>
                     <div id="results">
                         <br>
                         <br>
-                        <h3> Quiz completed! </h3>
-                            <p>Your total score is <span id="finalscore"></span>.</p>
+                        <div id="quizCompleted"> </h3>
+                            <p>Click "Get Results" to see your score. Your total score is <span id="finalscore"></span>.</p>
                             <p>Enter your initials below: <input type="text" id="displayInitials" max="4"/></p>
                             <button id="scoreButton" onclick="endQuiz()">Submit score</button>
                     </div>

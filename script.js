@@ -1,22 +1,3 @@
-// //create button on html page
-// //grab button inside query selector in java
-// //even listener when user clicks
-// //when click, go to question
-// //can put questions into html or javascript, java is dom manipulation
-// //one question, some options to said question
-// //user click option, is correct or incorrect, compare user choice to correct answer
-// //for loop over questions to ask multiple questions, can use array
-// //array for questions
-// //array for answers             
-// //keep track of indices for arrays for comparison, how to compare arrays????
-// //array for correct answer
-// //all arrays stored within an object
-// //timer outside of for loop, so that timer isn't restarting with the loop, same goes for eventlisteners
-// //create function for timer, run function when user starts quiz
-// //if user answers incorrectly, deduct time. if/else? -->
-
-// +++++=======================================
-
 var questions = [{
 	id: "1",
     question: "1. How do you write a message in an alert box?",
@@ -47,11 +28,6 @@ var questions = [{
 
 var totalScore = 0;
 var quizStarted = false;
-var cssStyling = 0;
-
-// document.getElementById("results").style.display = "none";
-
-// Question for Tutor: How do I get the text '# seconds left in the quiz" to appear next to the timer?
 var currentIndex= 0;
 function startQuiz(){
     renderButtons();
@@ -61,11 +37,11 @@ displayQuestion();
 removeStartBtn();
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
+  document.getElementById('count').textContent = `${count} seconds remaining`;
   count--;
   if (count === 0){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done';
-    // or...
 	alert("Time's up!!!");
   }
 
@@ -76,8 +52,6 @@ function removeStartBtn(){
     startNode.remove();
 }
 
-
-// Making the questions appear
 function displayQuestion(){
     addElement(questions[currentIndex]);
     displayChoices(questions[currentIndex]);
@@ -91,14 +65,12 @@ function incrementIndex(){
     } else {
         clearFeedback();
         currentIndex++;   
-        // document.getElementById("answer-confirmation").textContent = "";
         document.getElementById("question").innerHTML = questions[currentIndex].question;
         displayChoices(questions[currentIndex]);
     }
 	console.log("incremented", currentIndex);
 }
 function decrementIndex(){
-    // document.getElementById("answer-confirmation").textContent = "";
 	console.log("value", currentIndex, "questionlength", questions.length);
     if(currentIndex === 0){
     } else {
@@ -108,14 +80,12 @@ function decrementIndex(){
         displayChoices(questions[currentIndex]);
         
     }
-	console.log("decremented", currentIndex);
 }
 function displayChoices(currentQuestion){
-    // var currentQuestion = questions(currentIndex);
+
     var choiceElement = document.getElementById("choices");
     choiceElement.innerHTML = "";
     currentQuestion.choices.forEach(function(choice, i){
-        // console.log(choice);
         var choiceBtn = document.createElement("button");
         choiceBtn.setAttribute("value", choice);
         choiceBtn.textContent = choice;
@@ -133,8 +103,6 @@ function checkAnswer(){
     } else {
         displayElement.textContent = "WRONG!";
     }
-    
-    // console.log(this.value);
 }
 
 function clearFeedback(){
@@ -142,7 +110,8 @@ function clearFeedback(){
     clearFeedback.textContent= "";
 }
 function endQuiz(){
-    // display scorecard w/ Local Storage
+
+    renderQuizComplete();
     var playerInitials = document.getElementById("displayInitials").value.trim();
     if (playerInitials !== ""){
         var highScoreList = JSON.parse(window.localStorage.getItem("highScoreList")) || [];
@@ -150,18 +119,16 @@ function endQuiz(){
             score: totalScore,
             initials: playerInitials
         };
-        //append values to the array 
         highScoreList.push(newScore);
-        //set value in local storage under - highscorelist
         window.localStorage.setItem("highScoreList",JSON.stringify(highScoreList))
         window.location.href="scoreboard.html";
     }
 } 
-// 	document.body.onload = addElement;
+
 
 
 function getResults(){
-    // document.getElementById("results)").style.display = "block";
+
     document.getElementById("finalscore").textContent=totalScore;
 
 }
